@@ -1,0 +1,52 @@
+{
+  "Deli": [
+    {
+      "id": 1,
+      "item_name": "Samosa",
+      "price": "$5",
+      "quantity": "20",
+      "category": "Vegetarian",
+      "likes": "1.2k"
+    },
+    {
+      "id": 2,
+      "item_name": "Chicken Sandwich",
+      "price": "$8",
+      "quantity": "15",
+      "category": "Non-Vegetarian",
+      "likes": "2.1k"
+    },
+    {
+      "id": 3,
+      "item_name": "Veggie Wrap",
+      "price": "$6",
+      "quantity": "25",
+      "category": "Vegetarian",
+      "likes": "900"
+    },
+    {
+      "id": 4,
+      "item_name": "Chocolate Muffin",
+      "price": "$4",
+      "quantity": "30",
+      "category": "Dessert",
+      "likes": "1.8k"
+    },
+    {
+      "id": 5,
+      "item_name": "Cheese Pizza",
+      "price": "$10",
+      "quantity": "10",
+      "category": "Vegetarian",
+      "likes": "3.5k"
+    },
+    {
+      "id": 6,
+      "item_name": "Burger",
+      "price": "$9",
+      "quantity": "12",
+      "category": "Non-Vegetarian",
+      "likes": "2.8k"
+    }
+  ]
+}

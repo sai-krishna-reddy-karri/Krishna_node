@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="resume-wrapper">
+        <header>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#blog">Blogs</a></li>
+                    <li><a href="#icon">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+    <section class="about-me" id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+    
+    <section class="profile-section" id="img">
+        <img class="profile-image" src="./assets/profile.png" alt="profile">
+        <div class="name-designation">
+            <p>Name</p>
+            <p>Designation</p>
+        </div>
+    </section>
+
+    <section class="work-experience" id="work">
+        <h2>Work Experience</h2>
+        <div class="experience-container">
+            <div class="experience">
+                <div class="icon"><img class="experience-icon" src="./assets/exp.png" alt="experience"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="experience">
+                <div class="icon"><img class="experience-icon" src="./assets/exp.png" alt="experience"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="./assets/exp.png" alt="project">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="project">
+                <img src="./assets/exp.png" alt="project">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+            <div class="project">
+                <img src="./assets/exp.png" alt="project">
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="edu">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="college">
+                <div class="college-brand">
+                    <img class="college-img" src="./assets/exp.png" alt="college">
+                    <h3>College Name</h3>
+                </div>
+                <p>Major: Computer Science</p>
+                <p>CGPA: 8.844</p>
+                <p>Batch: 2023-2025</p>
+            </div>
+            <div class="college">
+                <div class="college-brand">
+                    <img class="college-img" src="./assets/exp.png" alt="college">
+                    <h3>College Name</h3>
+                </div>
+                <p>Major: Computer Science</p>
+                <p>CGPA: 8.844</p>
+                <p>Batch: 2023-2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogs" id="blog">
+        <h2>Blogs</h2>
+        <div class="blogs-container">
+            <div class="blog">
+                <h3>Blog Title 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="blog">
+                <h3>Blog Title 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="icon">
+        <h2>Contact</h2>
+        <div class="social-icons">
+            <a href="#"><img class="media-icons" src="./assets/instagram.png" alt="Instagram"><div class="social-title">Instagram</div></a>
+            <a href="#"><img class="media-icons" src="./assets/linkedin.png" alt="LinkedIn"><div class="social-title">LinkedIn</div></a>
+            <a href="#"><img class="media-icons" src="./assets/github.webp" alt="GitHub"><div class="social-title">GitHub</div></a>
+            <a href="#"><img class="media-icons" src="./assets/whatsapp.png" alt="WhatsApp"><div class="social-title">WhatsApp</div></a>
+        </div>
+    </footer>
+    </div>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.resume-wrapper {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+        "nav nav"
+        "about img"
+        "work work"
+        "projects projects"
+        "edu edu"
+        "blog blog"
+        "icon icon";
+}
+
+header {
+    grid-area: nav;
+    background-color: #add8e6;
+    padding: 10px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.about-me {
+    grid-area: about;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+
+
+.profile-section {
+    grid-area: img; 
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffe4e1;;
+}
+
+.profile-image {
+    height: 150px; 
+    width: 150px; 
+}
+
+.name-designation {
+    margin-top: 10px;
+}
+
+.work-experience {
+    grid-area: work;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.experience-container {
+    text-align: center;
+}
+
+.experience {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.experience p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.experience-icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.projects {
+    grid-area: projects;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.projects-container {
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.project p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.project img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.education {
+    grid-area: edu;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.education-container {
+    text-align: center;
+}
+
+.college {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.college p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.college img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.blogs {
+    grid-area: blog;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.blogs-container {
+    text-align: center;
+}
+
+.blog {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.blog p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    grid-area: icon;
+    background-color: #add8e6;
+    text-align: center;
+    padding: 20px;
+}
+
+.hamburger {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+.media-icons {
+    width: 40px;
+    height: 40px;
+}
+
+#about:target, #work:target, #projects:target, #edu:target, #blog:target, #icon:target{
+    background-color: #e0a294;
+}
+
+.hamburger {
+    display: none; 
+}
+
+@media (max-width: 500px) {
+    .hamburger {
+        display: block; 
+        cursor: pointer; 
+    }
+
+    nav ul {
+        display: none; 
+        text-align: left;
+        background-color: #add8e6;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+    var menu = document.getElementById('menu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+})
+    </script>
+</body>
+</html>

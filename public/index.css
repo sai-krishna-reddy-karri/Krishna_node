@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+.resume-wrapper {
+    display: grid;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+        "nav nav"
+        "about img"
+        "work work"
+        "projects projects"
+        "edu edu"
+        "blog blog"
+        "icon icon";
+}
+
+header {
+    grid-area: nav;
+    background-color: #add8e6;
+    padding: 10px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.about-me {
+    grid-area: about;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+
+
+.profile-section {
+    grid-area: img; 
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffe4e1;;
+}
+
+.profile-image {
+    height: 150px; 
+    width: 150px; 
+}
+
+.name-designation {
+    margin-top: 10px;
+}
+
+.work-experience {
+    grid-area: work;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.experience-container {
+    text-align: center;
+}
+
+.experience {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.experience p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.experience-icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.projects {
+    grid-area: projects;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.projects-container {
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.project p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.project img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.education {
+    grid-area: edu;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.education-container {
+    text-align: center;
+}
+
+.college {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.college p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.college img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.blogs {
+    grid-area: blog;
+    margin-top: 6px;
+    padding: 20px;
+    background-color: #ffe4e1;
+}
+
+.blogs-container {
+    text-align: center;
+}
+
+.blog {
+    display: inline-block;
+    width: 450px;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.blog p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    grid-area: icon;
+    background-color: #add8e6;
+    text-align: center;
+    padding: 20px;
+}
+
+.hamburger {
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+}
+
+.media-icons {
+    width: 40px;
+    height: 40px;
+}
+
+#about:target, #work:target, #projects:target, #edu:target, #blog:target, #icon:target{
+    background-color: #e0a294;
+}
+
+.hamburger {
+    display: none; 
+}
+
+@media (max-width: 500px) {
+    .hamburger {
+        display: block; 
+        cursor: pointer; 
+    }
+
+    nav ul {
+        display: none; 
+        text-align: left;
+        background-color: #add8e6;
+        padding: 10px;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
